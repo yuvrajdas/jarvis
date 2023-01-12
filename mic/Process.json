@@ -1,5 +1,5 @@
 {
-    "hi jarvis":"Speak('Hello sir...'); Speak('No sir... currenly i do not have girlfriend but i am trying to impress to alexa')",
+    "hi jarvis":"Speak('Hello sir... please tell me how can i help you...')",
     "how are you" : "Speak('thanks for asking sir... i am good and hope you too...')",
     "you have a girlfriend":"Speak('No sir... currenly i don't have girlfriend but i am trying to impress to alexa')",
     "tell me about yourself":"Speak('Hello sir...'); Speak('I am jarvis your digital assistance'); Speak('Created by mister yuvraj das'); Speak('Memory 12 gigabyte HDD 1 terabyte'); Speak('Speed 4.9 gigahertz'); Speak('CPU intel core i3 7020U 9th generation');",
