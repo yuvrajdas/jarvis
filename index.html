@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jarvis</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://codepen.io/FlyingEmu/pen/cjBzr.css" />
+    <link rel="stylesheet" href="Style.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  
+  </head>
+  <body onload="initializeJarvis()">
+    <h1 style="text-align: center; font-size: 150px; position: absolute; left:35%; top:-10%">J.A.R.V.I.S</h1>
+    <div class="scroll">
+      <div id="leftmenu">
+        <div id="date_time">
+          <div id="date" class="semi_arc e4">
+            <div class="semi_arc_2 e4_1">
+            </div>
+            <div style="font-size: 40px; margin-top: 25px;background: transparent;position: relative; " id="dateValue"></div>
+            <div style="font-size: 25px; background: transparent; position: absolute;  margin-left: 40px !important;" id="monthValue"></div>
+          </div>
+
+          <div id="time" class="arc e1">
+            <div
+              style="font-size: 23px; margin-left: -10px; margin-top: 23px; background: transparent;"
+              id="timeValue"
+            ></div>
+            <div
+              style="font-size: 17px; margin-top: 10px; background: transparent;"
+              id="weekDayValue"
+            ></div>
+          </div>
+        </div>
+
+        <p class="title">Health</p>
+        <div class="hline title_underline"></div>
+
+        <span style="font-size: 30px; margin-left: 10px">
+          <p id="cpu" class="caption" style="font-size: 20px">CPU Resources USED: 28%</p>
+        </span>
+        <br />
+
+        <span style="font-size: 30px; margin-left: 10px">
+          <p id="ram" class="caption" style="font-size: 20px">F</p>
+        </span>
+        <br />
+
+        <span style="font-size: 30px; margin-left: 10px">
+          <p id="proc" class="caption" style="font-size: 20px">Processes: INTEL QRB5165</p>
+        </span>
+
+         <p class="title">Jarvis Controllers</p>
+        <div class="hline title_underline"></div>  
+
+        <div class="menu">
+          <button class="menuitem">
+            <span class="entypo-right-open" />
+            <p class="caption" onclick="playAudio()">Cofiguration</p>
+          </button>
+          <button class="menuitem">
+            <span class="entypo-right-open" />
+            <p class="caption" onclick="playAudio()">Hardware Controls</p>
+          </button>
+          <button class="menuitem">
+            <span class="entypo-right-open" />
+            <p class="caption" onclick="playAudio()">Memory</p>
+          </button>
+          <button class="menuitem">
+            <span class="entypo-right-open" />
+            <p class="caption">Security System</p>
+          </button>
+
+          <!-- <hr style="border-color: transparent; margin: 0" /> -->
+          <!-- <div class="hline" style="margin-top: 5px; margin-bottom: 5px"></div> -->
+
+          <button class="menuitem">
+            <span class="entypo-right-open" />
+            <p class="caption">System Updates</p>
+          </button>
+          <button class="menuitem">
+            <span class="entypo-right-open" />
+            <p class="caption">Netwrok Configuration</p>
+          </button>
+          <button class="menuitem">
+            <span class="entypo-right-open" />
+            <p class="caption">Ease of Access</p>
+          </button>
+        </div>  
+
+         
+      </div>  
+     
+      <!-- Right Menu -->
+      <div id="rightmenu">
+        <div id="temperature">
+          <div id="date_time">
+            <div id="date" class="semi_arc e4">
+              <div class="semi_arc_2 e4_1">
+                <div class="counterspin4"></div>
+              </div>
+              <div
+                style="font-size: 34px; margin-top: 25px; background: transparent; position: relative;"
+                id="tempValue"
+              ></div>
+              <div style="font-size: 30px; background: transparent; position: relative;"><sup>0</sup>C</div>
+              <div style="font-size: 25px; background: transparent; position: relative;">Temp.</div>
+            </div>
+
+            <div id="time" class="arc e1">
+              <div
+                style="font-size: 23px; margin-right: 8px; margin-top: 23px;background: transparent;"
+                id="humidityValue"
+              ></div>
+              <div style="font-size: 17px; margin-top: 10px; background: transparent;">Humidity</div>
+            </div>
+          </div>
+        </div>
+         
+        <div class="bgimg">
+          <img src="Images/jarvisnew.png" alt="">
+        </div>
+      </div>
+       
+      
+
+      <!-- Arc Reactor -->
+      <button id="microphoneButton">
+        <div id="arc_container">
+        
+          <div class="arc_reactor">
+            <div class="case_container">
+              <div class="e7">
+                <div class="semi_arc_3 e5_1">
+                  <div class="semi_arc_3 e5_2">
+                    <div class="semi_arc_3 e5_3">
+                      <div class="semi_arc_3 e5_4" id="mainCircle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="core2"></div>
+              </div>
+              <ul class="marks">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </button>
+      
+    </div>
+    <script>
+      
+      $("#date_time").hide().delay(2000).fadeIn(3000);
+      $(".title").hide().delay(3000).fadeIn(3000);
+      $("#cpu").hide().delay(4000).fadeIn(3000);
+      $("#ram").hide().delay(4500).fadeIn(3000);
+      $("#proc").hide().delay(5000).fadeIn(3000);
+      $(".caption").hide().delay(6000).fadeIn(3000);
+      $("#note_input").hide().delay(7000).fadeIn(3000);
+      $("#temperature").hide().delay(8000).fadeIn(3000);
+      $("#mainCircle").hide().delay(8000).fadeIn(3000);
+      $("#time1").hide().delay(9000).fadeIn(3000);
+
+      // function playAudio()
+      // {
+      //   var clickSound = new Audio();
+      //   clickSound.autoplay = true;
+      //   clickSound.src = navigator.userAgent.match(/Firefox/) ? 'clickSound.mp3' : 'clickSound.mp3';
+      //   // play sound effect
+      //   clickSound.play();
+      // }
+    </script>
+    <script src="./index_JS.js"></script>
+    <script src="./app.js"></script>
+    
+  </body>
+</html> 
