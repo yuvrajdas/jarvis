@@ -1,13 +1,9 @@
 let Commands;
 const API_KEY="8dfd963431ab9f8e4b930973408b8e15";
-const one = "Ed Sheeran   Shape of you.webm";
-const two = "Imran Khan - Satisfya.webm";
-const three = "Senorita.webm";
-const four = "Chand_Tare_Tod_Full_Video_Song.mp3";
-const five = "Imagine Dragons - Believer.mp3";
-const six = "Justin Bieber – Despacito.mp3";
-const seven = "The Chainsmokers - Closer.mp3";
-const eight = "Baby Song.mp3";
+const one = "Chaand Taare - Yes Boss 128 Kbps.mp3";
+const two = "Chand_Tare_Tod_Full_Video_Song.mp3";
+const three = "First-Love--Pyar--Sunny-Cheema.mp3";
+ 
 function fetchCommands()
 {
     fetch("/mic/Process.json")
