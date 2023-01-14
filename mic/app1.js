@@ -232,7 +232,7 @@ function closeCamera()
 let player;
 function playVideo(){
     
-    player = window.open( 'http://127.0.0.1:5500/vid/player.html',
+    player = window.open('https://dreamy-sunshine-379868.netlify.app/vid/player.html',
 "",
 "width=720px,height=420px","left:200px, top:100px")
 }
@@ -249,7 +249,7 @@ function changeVideo(){
     Speak("Changing video...");
 
     setTimeout(()=>{
-        player = window.open( 'http://127.0.0.1:5500/vid/player1.html',
+        player = window.open('https://dreamy-sunshine-379868.netlify.app/vid/player1.html',
         "",
         "width=720px,height=420px","left:200px, top:100px")
     },2000)
