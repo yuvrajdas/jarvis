@@ -199,7 +199,7 @@ function getTodayDate()
 function openCamera()
 {
     openCamera = window.open(
-        'http://localhost:5500/mic/Camera2.html',
+        'https://jarvis-by-yuvraj.netlify.app/mic/Camera2.html',
         "",
         "width=700px,height=450px,left=300px,top=100px"
     );
@@ -232,7 +232,7 @@ function closeCamera()
 let player;
 function playVideo(){
     
-    player = window.open('https://dreamy-sunshine-379868.netlify.app/vid/player.html',
+    player = window.open('https://jarvis-by-yuvraj.netlify.app/vid/player.html',
 "",
 "width=720px,height=420px","left:200px, top:100px")
 }
@@ -249,7 +249,7 @@ function changeVideo(){
     Speak("Changing video...");
 
     setTimeout(()=>{
-        player = window.open('https://dreamy-sunshine-379868.netlify.app/vid/player1.html',
+        player = window.open('https://jarvis-by-yuvraj.netlify.app/vid/player1.html',
         "",
         "width=720px,height=420px","left:200px, top:100px")
     },2000)
